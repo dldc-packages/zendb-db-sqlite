@@ -1,8 +1,10 @@
 {
   "name": "@dldc/zendb-db-sqlite",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "exports": "./mod.ts",
-  "unstable": ["ffi"],
+  "unstable": [
+    "ffi"
+  ],
   "imports": {
     "@db/sqlite": "jsr:@db/sqlite@^0.12.0",
     "@dldc/zendb": "jsr:@dldc/zendb@^9.0.0",
