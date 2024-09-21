@@ -2,25 +2,25 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "jsr:@db/sqlite@^0.11.1": "jsr:@db/sqlite@0.11.1",
+      "jsr:@db/sqlite@^0.12.0": "jsr:@db/sqlite@0.12.0",
       "jsr:@denosaurs/plug@1": "jsr:@denosaurs/plug@1.0.6",
       "jsr:@dldc/erreur@^7.1.1": "jsr:@dldc/erreur@7.1.1",
       "jsr:@dldc/sqlite@^3.0.0": "jsr:@dldc/sqlite@3.0.0",
-      "jsr:@dldc/zendb@^8.0.0": "jsr:@dldc/zendb@8.0.0",
+      "jsr:@dldc/zendb@^9.0.0": "jsr:@dldc/zendb@9.0.0",
       "jsr:@std/assert@^0.217.0": "jsr:@std/assert@0.217.0",
       "jsr:@std/assert@^0.221.0": "jsr:@std/assert@0.221.0",
-      "jsr:@std/assert@^0.225.3": "jsr:@std/assert@0.225.3",
+      "jsr:@std/assert@^1.0.5": "jsr:@std/assert@1.0.5",
       "jsr:@std/encoding@^0.221.0": "jsr:@std/encoding@0.221.0",
-      "jsr:@std/expect@^0.224.2": "jsr:@std/expect@0.224.2",
+      "jsr:@std/expect@^1.0.3": "jsr:@std/expect@1.0.3",
       "jsr:@std/fmt@^0.221.0": "jsr:@std/fmt@0.221.0",
       "jsr:@std/fs@^0.221.0": "jsr:@std/fs@0.221.0",
-      "jsr:@std/internal@^1.0.0": "jsr:@std/internal@1.0.0",
+      "jsr:@std/internal@^1.0.3": "jsr:@std/internal@1.0.3",
       "jsr:@std/path@0.217": "jsr:@std/path@0.217.0",
       "jsr:@std/path@^0.221.0": "jsr:@std/path@0.221.0"
     },
     "jsr": {
-      "@db/sqlite@0.11.1": {
-        "integrity": "546434e7ed762db07e6ade0f963540dd5e06723b802937bf260ff855b21ef9c5",
+      "@db/sqlite@0.12.0": {
+        "integrity": "dd1ef7f621ad50fc1e073a1c3609c4470bd51edc0994139c5bf9851de7a6d85f",
         "dependencies": [
           "jsr:@denosaurs/plug@1",
           "jsr:@std/path@0.217"
@@ -41,8 +41,8 @@
       "@dldc/sqlite@3.0.0": {
         "integrity": "d3f02779612ceea31ccd231a7494efd724df11b42693ac38146cc7f8fc305542"
       },
-      "@dldc/zendb@8.0.0": {
-        "integrity": "f0330df55634fa5397b4315257596cdf3b9499946dd35da2382c5c37df922f74",
+      "@dldc/zendb@9.0.0": {
+        "integrity": "bcc54f909ac55ff91bb796b7be776a9db2513d88d24742b5850a634c779dfac5",
         "dependencies": [
           "jsr:@dldc/erreur@^7.1.1",
           "jsr:@dldc/sqlite@^3.0.0"
@@ -54,20 +54,20 @@
       "@std/assert@0.221.0": {
         "integrity": "a5f1aa6e7909dbea271754fd4ab3f4e687aeff4873b4cef9a320af813adb489a"
       },
-      "@std/assert@0.225.3": {
-        "integrity": "b3c2847aecf6955b50644cdb9cf072004ea3d1998dd7579fc0acb99dbb23bd4f",
+      "@std/assert@1.0.5": {
+        "integrity": "e37da8e4033490ce613eec4ac1d78dba1faf5b02a3f6c573a28f15365b9b440f",
         "dependencies": [
-          "jsr:@std/internal@^1.0.0"
+          "jsr:@std/internal@^1.0.3"
         ]
       },
       "@std/encoding@0.221.0": {
         "integrity": "d1dd76ef0dc5d14088411e6dc1dede53bf8308c95d1537df1214c97137208e45"
       },
-      "@std/expect@0.224.2": {
-        "integrity": "789ba764319503b1669b54fad2d279f35fe708247548878c5fb44e0cacc40a8e",
+      "@std/expect@1.0.3": {
+        "integrity": "d9cbd03323ef7feafd1e969ed85d5edb04ebbd9937b0fe7a52d5ff53be8e913a",
         "dependencies": [
-          "jsr:@std/assert@^0.225.3",
-          "jsr:@std/internal@^1.0.0"
+          "jsr:@std/assert@^1.0.5",
+          "jsr:@std/internal@^1.0.3"
         ]
       },
       "@std/fmt@0.221.0": {
@@ -80,8 +80,8 @@
           "jsr:@std/path@^0.221.0"
         ]
       },
-      "@std/internal@1.0.0": {
-        "integrity": "ac6a6dfebf838582c4b4f61a6907374e27e05bedb6ce276e0f1608fe84e7cd9a"
+      "@std/internal@1.0.3": {
+        "integrity": "208e9b94a3d5649bd880e9ca38b885ab7651ab5b5303a56ed25de4755fb7b11e"
       },
       "@std/path@0.217.0": {
         "integrity": "1217cc25534bca9a2f672d7fe7c6f356e4027df400c0e85c0ef3e4343bc67d11",
@@ -100,9 +100,9 @@
   "remote": {},
   "workspace": {
     "dependencies": [
-      "jsr:@db/sqlite@^0.11.1",
-      "jsr:@dldc/zendb@^8.0.0",
-      "jsr:@std/expect@^0.224.2"
+      "jsr:@db/sqlite@^0.12.0",
+      "jsr:@dldc/zendb@^9.0.0",
+      "jsr:@std/expect@^1.0.3"
     ]
   }
 }

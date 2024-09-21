@@ -2,16 +2,17 @@
   "name": "@dldc/zendb-db-sqlite",
   "version": "1.0.0",
   "exports": "./mod.ts",
+  "unstable": ["ffi"],
   "imports": {
-    "@db/sqlite": "jsr:@db/sqlite@^0.11.1",
-    "@dldc/zendb": "jsr:@dldc/zendb@^8.0.0",
-    "@std/expect": "jsr:@std/expect@^0.224.2"
+    "@db/sqlite": "jsr:@db/sqlite@^0.12.0",
+    "@dldc/zendb": "jsr:@dldc/zendb@^9.0.0",
+    "@std/expect": "jsr:@std/expect@^1.0.3"
   },
   "tasks": {
-    "test:run": "deno test -A --unstable-ffi",
-    "test:watch": "deno test -A --unstable-ffi --watch",
+    "test:run": "deno test -A",
+    "test:watch": "deno test -A --watch",
     "bump": "deno run -A jsr:@mys/bump@1",
-    "update": "deno run --allow-read=. --allow-write=. --allow-net https://deno.land/x/udd@0.8.2/main.ts *.ts deno.jsonc",
+    "update": "deno run --allow-read=. --allow-write=. --allow-net https://deno.land/x/udd@0.8.2/main.ts *.ts deno.json",
     "check": "deno fmt --check . && deno lint . && deno task test:run"
   },
   "lint": {
