@@ -45,19 +45,19 @@ export function DbDatabase(sqlDb: Database): TDbDatabase {
       const stmt = sqlDb.prepare(op.sql);
       const res = op.params ? stmt.all(op.params) : stmt.all();
       return opResult<zen.TQueryOperation<any>>(
-        op.parse(res as Record<string, any>[])
+        op.parse(res as Record<string, any>[]),
       );
     }
     if (op.kind === "ListTables") {
       const res = sqlDb.prepare(op.sql).all();
       return opResult<zen.TListTablesOperation>(
-        op.parse(res as Record<string, any>[])
+        op.parse(res as Record<string, any>[]),
       );
     }
     if (op.kind === "Pragma") {
       const res = sqlDb.prepare(op.sql).all();
       return opResult<zen.TPragmaOperation<any>>(
-        op.parse(res as Record<string, any>[])
+        op.parse(res as Record<string, any>[]),
       );
     }
     if (op.kind === "PragmaSet") {
@@ -68,13 +68,13 @@ export function DbDatabase(sqlDb: Database): TDbDatabase {
   }
 
   function opResult<Op extends zen.TOperation>(
-    res: zen.TOperationResult<Op>
+    res: zen.TOperationResult<Op>,
   ): zen.TOperationResult<zen.TOperation> {
     return res;
   }
 
   function execMany<Op extends zen.TOperation>(
-    ops: Op[]
+    ops: Op[],
   ): zen.TOperationResult<Op>[] {
     return ops.map((op) => exec(op));
   }
