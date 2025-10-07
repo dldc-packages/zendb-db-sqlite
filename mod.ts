@@ -6,4 +6,5 @@ export const DbSqliteDriver: Driver.TDriver<Database> = Driver
     exec: (db, sql) => db.exec(sql),
     prepare: (db, sql) => db.prepare(sql),
     createDatabase: () => new Database(":memory:"),
+    closeDatabase: (db) => db.close(),
   });
