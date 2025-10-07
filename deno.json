@@ -1,6 +1,6 @@
 {
   "name": "@dldc/zendb-db-sqlite",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "exports": "./mod.ts",
   "unstable": [
     "ffi"
